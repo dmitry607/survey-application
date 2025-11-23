@@ -31,7 +31,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <TextBlock FontFamily="Segoe UI" 
-                       FontSize="27" 
+                       FontSize="24" 
                        Foreground="White"
                        TextAlignment="Left" 
                        TextWrapping="Wrap"
