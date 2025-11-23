@@ -16,7 +16,7 @@
                           ObjectType="{x:Type io:File}"
                           MethodName="ReadAllText">
             <ObjectDataProvider.MethodParameters>
-                <sys:String>C:\dotnet\SurveyApp\SurveyApp\тексты\Policy.txt</sys:String>
+                <sys:String>C:\dotnet\SurveyApp\SurveyApp\texts\Policy.txt</sys:String>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
     </Window.Resources>

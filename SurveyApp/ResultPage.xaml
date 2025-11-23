@@ -36,7 +36,8 @@
                        TextAlignment="Left" 
                        TextWrapping="Wrap"
                        xml:space="preserve"
-                       Margin="10,10,10,10"/>
+                       Margin="10,10,10,10"
+                       Text="{Binding recDescription}"/>
         </Grid>
 
         <Grid Grid.Row="2" Margin="0, 0">
@@ -45,9 +46,9 @@
             </Grid.ColumnDefinitions>
 
             <Viewbox>
-                <TextBox Width="2564" Height="150" 
+                <TextBox x:Name="EmailTextBox"
+                         Width="2564" Height="150" 
                          Style="{StaticResource TextBoxStyle}">
-                    
                 </TextBox>
             </Viewbox>
         </Grid>
@@ -76,7 +77,7 @@
             </Viewbox>
 
         </Grid>
-        <Grid Grid.Row="4" >
+        <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
