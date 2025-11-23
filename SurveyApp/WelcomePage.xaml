@@ -1,0 +1,50 @@
+﻿<Page x:Class="SurveyApp.WelcomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SurveyApp"
+        mc:Ignorable="d"
+        Height="1000"  Width="1080" 
+        Background="{StaticResource forBackground}">
+
+    <Grid Margin="200, 50, 200, 100">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Margin="40"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    TextAlignment="Center"
+                    FontWeight="Bold"
+                    FontSize="50"
+                    Style="{StaticResource GlobalTextBlock}">
+            SberQ
+        </TextBlock>
+
+        <TextBlock  Grid.Row="1"
+                    TextWrapping="Wrap" 
+                    TextAlignment="Center"
+                    FontSize="25"
+                    Style="{StaticResource GlobalTextBlock}">
+            SberQ – это сочетание инструментов
+            психодиагностики и оценки компетенций
+            с использованием реалистичной бизнес-
+            симуляции для диагностики
+            управленческих компетенций
+            и потенциала. Метод разработан
+            экспертами СберУниверситета, HR-блоком
+            Сбера и Лабораторией нейронаук
+            и поведения человека.
+        </TextBlock>
+        <Viewbox Grid.Row="2" Margin="60,60,60,60" VerticalAlignment="Bottom">
+            <Button Content="Проверить себя"
+                    MinHeight="133" MinWidth="300" Width="646"
+                    Style="{StaticResource ButtonStyle}"
+                    Click="Button_ToMainPage"/>
+        </Viewbox>
+    </Grid>
+</Page>

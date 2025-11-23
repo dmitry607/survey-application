@@ -1,0 +1,53 @@
+﻿<Window x:Class="SurveyApp.PopupWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:io="clr-namespace:System.IO;assembly=mscorlib"
+        xmlns:local="clr-namespace:SurveyApp"
+        mc:Ignorable="d"
+        Title="PopupWindow1" 
+        MaxHeight="700" MaxWidth="400" Background="#ededed"
+        Width="490" Height="540" >
+    <Window.Resources>
+        <ObjectDataProvider x:Key="TextFileProvider" 
+                          ObjectType="{x:Type io:File}"
+                          MethodName="ReadAllText">
+            <ObjectDataProvider.MethodParameters>
+                <sys:String>C:\dotnet\SurveyApp\SurveyApp\тексты\Policy.txt</sys:String>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="0">
+            <TextBlock TextWrapping="Wrap"
+                       Text="Политика в отношении обработки персональных данных АНО ДПО «Корпоративный университет Сбербанка»"
+                       FontFamily="Segoe UI" FontSize="30" Foreground="Black" FontWeight="Bold"
+                       />
+        </Viewbox>
+        <Viewbox Grid.Row="1" Margin="0,9,0,0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="-10">
+                <TextBlock  Text="{Binding Source={StaticResource TextFileProvider}}" 
+                            Foreground="Black" FontSize="7" 
+                            Style="{StaticResource TextStyleForPoints}" Height="621" Width="546">
+
+                </TextBlock>
+            </ScrollViewer>
+        </Viewbox>
+        <Viewbox Grid.Row="2" Stretch="Uniform" Margin="0,0,0,0" Grid.RowSpan="2" >
+            <Button Content="Закрыть" 
+                    Width="120" 
+                    BorderBrush="#1daf43" 
+                    Background="#1daf43"
+                   
+                    Foreground="White"
+                    FontFamily="Segoe UI"/>
+        </Viewbox>
+    </Grid>
+</Window>
