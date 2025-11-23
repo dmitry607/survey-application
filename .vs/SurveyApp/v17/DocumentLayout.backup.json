@@ -50,21 +50,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResultPage.xaml.cs",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\ResultPage.xaml.cs",
-              "RelativeDocumentMoniker": "SurveyApp\\ResultPage.xaml.cs",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\ResultPage.xaml.cs",
-              "RelativeToolTip": "SurveyApp\\ResultPage.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwDYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T15:16:17.22Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -76,6 +63,19 @@
               "ViewState": "AgIAACEAAAAAAAAAAAAuwFQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T08:48:47.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultPage.xaml.cs",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\ResultPage.xaml.cs",
+              "RelativeDocumentMoniker": "SurveyApp\\ResultPage.xaml.cs",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\ResultPage.xaml.cs",
+              "RelativeToolTip": "SurveyApp\\ResultPage.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T15:16:17.22Z",
               "EditorCaption": ""
             },
             {

@@ -37,7 +37,7 @@
                        TextWrapping="Wrap"
                        xml:space="preserve"
                        Margin="10,10,10,10"
-                       Text="{Binding recDescription}"/>
+                       Text="{Binding RecDescription}"/>
         </Grid>
 
         <Grid Grid.Row="2" Margin="0, 0">
