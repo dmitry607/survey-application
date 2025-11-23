@@ -57,7 +57,9 @@
             </Grid.ColumnDefinitions>
             <Viewbox  Grid.Column="0" Margin="10, 0" HorizontalAlignment="Left">
                 <CheckBox x:Name="checkBox" 
-                          Style="{StaticResource CheckBoxStyle}">
+                          Style="{StaticResource CheckBoxStyle}" 
+                          Checked="checkBox_Checked"
+                          IsChecked="{Binding Checked}">
                     <TextBlock FontSize="12" 
                                Style="{StaticResource GlobalTextBlock}">
                         Я ознакомлен с 
@@ -70,7 +72,6 @@
                                    Foreground="White"> 
                             персональных данных </Hyperlink>
                     </TextBlock>
-
                 </CheckBox>
             </Viewbox>
 

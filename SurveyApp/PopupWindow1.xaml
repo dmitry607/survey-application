@@ -8,8 +8,9 @@
         xmlns:local="clr-namespace:SurveyApp"
         mc:Ignorable="d"
         Title="PopupWindow1" 
-        MaxHeight="700" MaxWidth="400" Background="#ededed"
-        Width="490" Height="540" >
+        Background="#ededed"
+        Width="800" Height="900"
+        WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ObjectDataProvider x:Key="TextFileProvider" 
                           ObjectType="{x:Type io:File}"
@@ -25,29 +26,31 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Viewbox Grid.Row="0">
-            <TextBlock TextWrapping="Wrap"
-                       Text="Политика в отношении обработки персональных данных АНО ДПО «Корпоративный университет Сбербанка»"
-                       FontFamily="Segoe UI" FontSize="30" Foreground="Black" FontWeight="Bold"
-                       />
-        </Viewbox>
-        <Viewbox Grid.Row="1" Margin="0,9,0,0">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="-10">
-                <TextBlock  Text="{Binding Source={StaticResource TextFileProvider}}" 
-                            Foreground="Black" FontSize="7" 
-                            Style="{StaticResource TextStyleForPoints}" Height="621" Width="546">
 
-                </TextBlock>
-            </ScrollViewer>
-        </Viewbox>
+        <TextBlock Grid.Row="0"
+                    TextWrapping="Wrap"
+                    TextAlignment="Center"
+                    Text="Политика в отношении обработки персональных данных АНО ДПО «Корпоративный университет Сбербанка»"
+                    FontFamily="Segoe UI" FontSize="20" Foreground="Black" FontWeight="Bold"
+                    />
+
+        <ScrollViewer Grid.Row="1" 
+              Margin="0,9,0,0"
+              VerticalScrollBarVisibility="Auto">
+            <TextBlock Text="{Binding Source={StaticResource TextFileProvider}}" 
+               Foreground="Black" 
+               FontSize="10" 
+               Style="{StaticResource TextStyleForPoints}"/>
+        </ScrollViewer>
+
         <Viewbox Grid.Row="2" Stretch="Uniform" Margin="0,0,0,0" Grid.RowSpan="2" >
             <Button Content="Закрыть" 
                     Width="120" 
                     BorderBrush="#1daf43" 
                     Background="#1daf43"
-                   
                     Foreground="White"
-                    FontFamily="Segoe UI"/>
+                    FontFamily="Segoe UI"
+                    Click="Button_Click"/>
         </Viewbox>
     </Grid>
 </Window>

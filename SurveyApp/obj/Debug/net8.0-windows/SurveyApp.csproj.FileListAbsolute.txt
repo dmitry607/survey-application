@@ -32,3 +32,6 @@ C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\LastPage.g.cs
 C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\LastPage.baml
 C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\WelcomePage.g.cs
 C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\WelcomePage.baml
+C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\SurveyApp.sourcelink.json
+C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\ThxPage.g.cs
+C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\ThxPage.baml

@@ -1,0 +1,34 @@
+﻿<Page x:Class="SurveyApp.ThxPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SurveyApp"
+        mc:Ignorable="d"
+        Title="Результаты" 
+        Height="1000"  Width="800" 
+        Background="{StaticResource forBackground}">
+
+    <Grid Margin="100, 50, 100, 100">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                    VerticalAlignment="Bottom"
+                    TextWrapping="Wrap"
+                    TextAlignment="Center"
+                    FontWeight="Bold"
+                    FontSize="50"
+                    Style="{StaticResource GlobalTextBlock}">
+            Спасибо за прохождение теста
+        </TextBlock>
+        <Viewbox Grid.Row="2" Margin="60,60,60,60" VerticalAlignment="Bottom">
+            <Button Content="На главную"
+                    MinHeight="133" MinWidth="300" Width="646"
+                    Click="Button_ReturnToWelcomePage"
+                    Style="{StaticResource ButtonStyle}"/>
+        </Viewbox>
+    </Grid>
+
+</Page>

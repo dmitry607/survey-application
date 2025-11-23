@@ -10,23 +10,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SurveyApp
 {
-    /// <summary>
-    /// Логика взаимодействия для PopupWindow2.xaml
-    /// </summary>
-    public partial class PopupWindow2 : Window
+    public partial class ThxPage : Page
     {
-        public PopupWindow2()
+        public ThxPage()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_ReturnToWelcomePage(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if (Application.Current.MainWindow is MainWindow mainWindow) 
+            { mainWindow.NavigateToPage(new WelcomePage()); }
         }
     }
 }
