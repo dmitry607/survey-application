@@ -4,80 +4,74 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SurveyApp"
-        mc:Ignorable="d"
-        Title="Результаты" 
+        mc:Ignorable="d" 
         Height="1000"  Width="1080" 
-        Background="{StaticResource forBackground}">
+        Background="{StaticResource PrimaryGradient}">
 
     <Grid Margin="30">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="8*"/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Viewbox Grid.Row="0" MaxHeight="120">
-            <TextBlock FontFamily="Segoe UI" Background="Transparent"
-                       Foreground="White" FontWeight="Bold"
-                       FontSize="30"
+            <TextBlock FontSize="30"
+                       FontWeight="Bold"
+                       Style="{StaticResource TextBlockForTitle}"
                        Text="{Binding ResultText}"/>
 
         </Viewbox>
 
         <Grid Grid.Row="1"  Margin="0,0,0,20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <TextBlock FontFamily="Segoe UI" 
-                       FontSize="24" 
-                       Foreground="White"
+            <TextBlock FontSize="24" 
                        TextAlignment="Left" 
-                       TextWrapping="Wrap"
                        xml:space="preserve"
                        Margin="10,10,10,10"
+                       Style="{StaticResource GlobalTextBlock}"
                        Text="{Binding RecDescription}"/>
         </Grid>
 
-        <Grid Grid.Row="2" Margin="0, 0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Viewbox>
-                <TextBox x:Name="EmailTextBox"
-                         Width="2564" Height="150" 
-                         Style="{StaticResource TextBoxStyle}">
-                </TextBox>
-            </Viewbox>
+        <Grid Grid.Row="2">
+            <TextBlock Text="Вы можете оставить свой Email, чтобы получить результаты на почту"
+                       FontSize="20"
+                       TextAlignment="Center"
+                       Style="{StaticResource GlobalTextBlock}"/>
         </Grid>
-        <Grid Grid.Row="3" Margin="20, 0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Grid Grid.Row="3">
+            <TextBox x:Name="EmailTextBox"
+                     Style="{StaticResource TextBoxStyle}">
+            </TextBox>
+        </Grid>
+        <Grid Grid.Row="4" Margin="20, 0">
+
             <Viewbox  Grid.Column="0" Margin="10, 0" HorizontalAlignment="Left">
                 <CheckBox x:Name="checkBox" 
-                          Style="{StaticResource CheckBoxStyle}" 
                           Checked="checkBox_Checked"
-                          IsChecked="{Binding Checked}">
-                    <TextBlock FontSize="12" 
-                               Style="{StaticResource GlobalTextBlock}">
+                          IsChecked="{Binding Checked}"
+                          Style="{StaticResource CheckBoxStyle}">
+                    <TextBlock FontSize="12" Style="{StaticResource GlobalTextBlock}">
                         Я ознакомлен с 
                         <Hyperlink Click="Open_Policy"
                                    Cursor="Hand"
-                                   Foreground="White"> Политикой СберУниверситета </Hyperlink> 
+                                   Foreground="White"> 
+                            Политикой СберУниверситета 
+                        </Hyperlink> 
                         и даю согласие на обработку <LineBreak/>
                         <Hyperlink Click="Open_Personal"
                                    Cursor="Hand"
                                    Foreground="White"> 
-                            персональных данных </Hyperlink>
+                            персональных данных 
+                        </Hyperlink>
                     </TextBlock>
                 </CheckBox>
             </Viewbox>
 
         </Grid>
-        <Grid Grid.Row="4">
+        <Grid Grid.Row="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -85,12 +79,13 @@
             <Viewbox  Grid.Column="0" HorizontalAlignment="Left">
                 <Button Content="Завершить" 
                         Width="750"
-                        Style="{StaticResource ButtonStyle}" Click="Button_Quit"/>
+                        Style="{StaticResource ButtonStyle}" 
+                        Click="Button_Quit"/>
             </Viewbox>
             <Viewbox  Grid.Column="1" HorizontalAlignment="Right">
                 <Button Content="Отправить ответы"
                         Width="750"
-                        HorizontalAlignment="Left"
+                        IsDefault="True"
                         Style="{StaticResource ButtonStyle}" 
                         Click="Button_SendEmail"/>
             </Viewbox>

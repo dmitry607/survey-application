@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
@@ -11,6 +12,7 @@ namespace SurveyApp
         private int totalScore;
         private string grade;
         private string recDescription;
+        
 
         public ResultViewModel(Question question)
         {
@@ -88,6 +90,28 @@ namespace SurveyApp
             if (score <= 7) { return "0-2"; }
             if (score >= 12) { return "7-10"; }
             else return "3-6";
+        }
+
+        public async Task<bool> IsInternetAvaibleAsync()
+        {
+            try
+            {
+                using (Ping ping = new Ping())
+                {
+                    var reply = await ping.SendPingAsync("8.8.8.8", 3000);
+                    bool resume = reply.Status == IPStatus.Success;
+
+                    if (!resume)
+                    { MessageBox.Show("Сообщение не отправено. Проверьте подключение к интернету", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error); }
+
+                    return resume;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Сообщение не отправлено. Проверьте подключение к интернету", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

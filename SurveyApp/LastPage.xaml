@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Результаты" 
         Height="1000"  Width="800" 
-        Background="{StaticResource forBackground}">
+        Background="{StaticResource PrimaryGradient}">
 
     <Grid Margin="100, 50, 100, 100">
         <Grid.RowDefinitions>
@@ -20,7 +20,7 @@
                     TextAlignment="Center"
                     FontWeight="Bold"
                     FontSize="50"
-                    Style="{StaticResource GlobalTextBlock}">
+                    Style="{StaticResource TextBlockForTitle}">
             Ваши результаты <LineBreak/> успешно отправлены!
         </TextBlock>
         <TextBlock Grid.Row="1"

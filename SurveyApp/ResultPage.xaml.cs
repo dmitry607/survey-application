@@ -1,4 +1,5 @@
-﻿
+﻿using System.Net.NetworkInformation;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -22,11 +23,13 @@ namespace SurveyApp
             }
             catch(Exception ex)
             {
-                MessageBox.Show($"ошибка { ex.Message}", "лшибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"ошибка { ex.Message}", "ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         private async void Button_SendEmail(object sender, RoutedEventArgs e)
         {
+            if(!await IsInternetAvaibleAsync()) { return; }
+
             try
             {
                 string email = EmailTextBox.Text.Trim();
@@ -58,7 +61,7 @@ namespace SurveyApp
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show($"Ошибка при отправке email {ex.Message}");
+                    MessageBox.Show($"Ошибка при отправке email: {ex.Message}");
                 }
 
                 if (Application.Current.MainWindow is MainWindow mainWindow)
@@ -91,6 +94,28 @@ namespace SurveyApp
             }
             catch { return false; }
             */
+        }
+
+        public async Task<bool> IsInternetAvaibleAsync()
+        {
+            try
+            {
+                using (Ping ping = new Ping())
+                {
+                    var reply = await ping.SendPingAsync("8.8.8.8", 3000);
+                    bool resume = reply.Status == IPStatus.Success;
+
+                    if (!resume)
+                    { MessageBox.Show("Сообщение не отправено. Проверьте подключение к интернету", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error); }
+
+                    return resume;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Сообщение не отправлено. Проверьте подключение к интернету", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
         }
 
         private void Button_Quit(object sender, RoutedEventArgs e)

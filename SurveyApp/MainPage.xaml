@@ -5,9 +5,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="clr-namespace:SurveyApp"
       mc:Ignorable="d"
-      Title="Оценка SberQ"
-      Background="{StaticResource forBackground}">
-
+      Background="{StaticResource PrimaryGradient}">
+      
     <Grid Margin="30">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,24 +14,20 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Viewbox Grid.Row="0" Stretch="Uniform" MaxHeight="120" Margin="0, 0, 0, 20">
-            <TextBlock Text="Оценка SberQ" 
-                 FontWeight="Bold"
-                 Style="{StaticResource GlobalTextBlock}"/>
+        <Viewbox Grid.Row="0" MaxHeight="120" Margin="0, 0, 0, 20">
+            <TextBlock Text="Оценка SberQ"
+                       Style="{StaticResource TextBlockForTitle}"/>
         </Viewbox>
 
         <ScrollViewer Grid.Row="1" 
                       VerticalScrollBarVisibility="Auto" 
                       Padding="10">
-            <Border Style="{StaticResource BorderStyle}"
-                Background="{StaticResource forBackground}"
-                Padding="30"              
-                HorizontalAlignment="Center">
+            <Border Style="{StaticResource BorderStyle}">
 
                 <StackPanel>
                     <!--1-->
                     <StackPanel Margin="0, 0, 0, 40">
-                        <Viewbox MaxHeight="60" Margin="0, 0, 0, 15">
+                        <Viewbox MaxHeight="40" Margin="0, 0, 0, 15">
                             <TextBlock Text="1. На какой срок у вас есть карьерная цель:" 
                                        Style="{StaticResource TextStyleForSurvey}"/>
                         </Viewbox>
@@ -43,20 +38,23 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Viewbox Grid.Column="0" MaxHeight="30" HorizontalAlignment="Left">
-                                <TextBlock Text="нет цели" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="1"  MaxHeight="30" HorizontalAlignment="Center">
-                                <TextBlock Text="1-3 года" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="2" MaxHeight="30" HorizontalAlignment="Right">
-                                <TextBlock Text="3+ лет" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
+                            <TextBlock Grid.Column="0" 
+                                       Text="нет цели" 
+                                       TextAlignment="Left"
+                                       Style="{StaticResource TextStyleForPoints}" />
+                            <TextBlock Grid.Column="1" 
+                                       Text="1-3 года" 
+                                       TextAlignment="Center"
+                                       Style="{StaticResource TextStyleForPoints}"/>
+                            <TextBlock Grid.Column="2" 
+                                       Text="3+ лет" 
+                                       TextAlignment="Right"
+                                       Style="{StaticResource TextStyleForPoints}" />
                         </Grid>
                     </StackPanel>
                     <!--2-->
                     <StackPanel Margin="0, 0, 0, 40">
-                        <Viewbox MaxHeight="60" Margin="0, 0, 0, 15">
+                        <Viewbox MaxHeight="40" Margin="0, 0, 0, 15">
                             <TextBlock Text="2. Как часть вы занимаетесь собственным развитием:" 
                                    Style="{StaticResource TextStyleForSurvey}"/>
                         </Viewbox>
@@ -67,20 +65,23 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Viewbox Grid.Column="0" MaxHeight="30" HorizontalAlignment="Left">
-                                <TextBlock Text="редко" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="1" MaxHeight="30" HorizontalAlignment="Center">
-                                <TextBlock Text="периодически" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="2" MaxHeight="30" HorizontalAlignment="Right">
-                                <TextBlock Text="постоянно" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
+                            <TextBlock Grid.Column="0" 
+                                       Text="редко" 
+                                       TextAlignment="Left"
+                                       Style="{StaticResource TextStyleForPoints}" />
+                            <TextBlock Grid.Column="1" 
+                                       Text="переодически" 
+                                       TextAlignment="Center"
+                                       Style="{StaticResource TextStyleForPoints}"/>
+                            <TextBlock Grid.Column="2" 
+                                       Text="постоянно" 
+                                       TextAlignment="Right"
+                                       Style="{StaticResource TextStyleForPoints}" />
                         </Grid>
                     </StackPanel>
                     <!--3-->
                     <StackPanel Margin="0, 0, 0, 40">
-                        <Viewbox  MaxHeight="60" Margin="0, 0, 0, 15">
+                        <Viewbox  MaxHeight="40" Margin="0, 0, 0, 15">
                             <TextBlock Text="3. Как вы понимаете свои сильные стороны:" 
                                        Style="{StaticResource TextStyleForSurvey}"/>
                         </Viewbox>
@@ -91,63 +92,73 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Viewbox Grid.Column="0" Stretch="Uniform" MaxHeight="30" HorizontalAlignment="Left">
-                                <TextBlock Text="не было мысли про это" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="1" Stretch="Uniform" MaxHeight="30" HorizontalAlignment="Center">
-                                <TextBlock Text="запрашиваю обратную связь" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="2" Stretch="Uniform" MaxHeight="30" HorizontalAlignment="Right">
-                                <TextBlock Text="прохожу ассессмент" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
+                            <TextBlock Grid.Column="0" 
+                                       Text="не было мысли про это" 
+                                       TextAlignment="Left"
+                                       Style="{StaticResource TextStyleForPoints}" />
+                            <TextBlock Grid.Column="1" 
+                                       Text="запрашиваю обратную связь" 
+                                       TextAlignment="Center"
+                                       Style="{StaticResource TextStyleForPoints}"/>
+                            <TextBlock Grid.Column="2" 
+                                       Text="прохожу ассессмент" 
+                                       TextAlignment="Right"
+                                       Style="{StaticResource TextStyleForPoints}" />
                         </Grid>
                     </StackPanel>
                     <!--4-->
                     <StackPanel Margin="0, 0, 0, 40">
-                        <Viewbox Stretch="Uniform" MaxHeight="60" Margin="0, 0, 0, 15">
+                        <Viewbox MaxHeight="40" Margin="0, 0, 0, 15">
                             <TextBlock Text="4. Как вы понимаете, какие компетенции нужно развивать:" 
                                    Style="{StaticResource TextStyleForSurvey}"/>
                         </Viewbox>
                         <Slider Value="{Binding Slider_4, Mode=TwoWay}" Style="{StaticResource SliderStyle}"/>
-                        <Grid Margin="0, 10, 0, 0">
+                        <Grid Margin="0, 10, 0, 0" Height="78">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Viewbox Grid.Column="0" MaxHeight="30" HorizontalAlignment="Left">
-                                <TextBlock Text="по мере столкновения с трудностями" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
-                            <Viewbox Grid.Column="1" MaxHeight="30" HorizontalAlignment="Center">
-                                <TextBlock Text="по рекомендации руководства и коллег" Style="{StaticResource TextStyleForPoints}"/>
-                            </Viewbox>
-                            <Viewbox Grid.Column="2" MaxHeight="30" HorizontalAlignment="Right">
-                                <TextBlock Text="на основе карьерных консультаций" Style="{StaticResource TextStyleForPoints}" />
-                            </Viewbox>
+                            <TextBlock Grid.Column="0" 
+                                       Text="по мере столкновения с трудностями" 
+                                       TextAlignment="Left"
+                                       Style="{StaticResource TextStyleForPoints}" />
+                            <TextBlock Grid.Column="1" 
+                                       Text="по рекомендации руководства и коллег" 
+                                       TextAlignment="Center"
+                                       Style="{StaticResource TextStyleForPoints}"/>
+                            <TextBlock Grid.Column="2" 
+                                       Text="на основе карьерных консультаций" 
+                                       TextAlignment="Right"
+                                       Style="{StaticResource TextStyleForPoints}" />
                         </Grid>
                     </StackPanel>
                     <!--5-->
                     <StackPanel Margin="0, 0, 0, 20">
-                        <Viewbox Stretch="Uniform" MaxHeight="60" Margin="0, 0, 0, 15">
+                        <Viewbox MaxHeight="40" Margin="0, 0, 0, 15">
                             <TextBlock Text="5. Где вы берете вдохновение на развитие:" 
                                    Style="{StaticResource TextStyleForSurvey}"/>
                         </Viewbox>
                         <Slider Value="{Binding Slider_5, Mode=TwoWay}" Style="{StaticResource SliderStyle}"/>
                         <Grid Margin="0, 10, 0, 0">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="16*"/>
-                                <ColumnDefinition Width="111*"/>
-                                <ColumnDefinition Width="34*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Viewbox Stretch="Uniform" MaxHeight="30" HorizontalAlignment="Center" Width="64">
-                                <TextBlock Text="а что это?" Style="{StaticResource TextStyleForPoints}"/>
-                            </Viewbox>
-                            <Viewbox Grid.Column="1" MaxHeight="30" HorizontalAlignment="Left" Width="99" Margin="209,0,0,0">
-                                <TextBlock Text="надо значит надо" Style="{StaticResource TextStyleForPoints}"/>
-                            </Viewbox>
-                            <Viewbox Grid.Column="2" MaxHeight="30" HorizontalAlignment="Center" Width="218">
-                                <TextBlock Text="меня заряжает стремление к амбициозным целям"  Style="{StaticResource TextStyleForPoints}" FontSize="25"/>
-                            </Viewbox>
+                            <TextBlock Grid.Column="0" 
+                                       Text="а что это?" 
+                                       TextAlignment="Left"
+                                       Style="{StaticResource TextStyleForPoints}" />
+                            <TextBlock Grid.Column="1" 
+                                       Text="надо значит надо" 
+                                       TextAlignment="Center"
+                                       Style="{StaticResource TextStyleForPoints}"/>
+                            <TextBlock Grid.Column="2" 
+                                       Text="меня заряжает стремление к амбициозным целям" 
+                                       TextAlignment="Right"
+                                       Style="{StaticResource TextStyleForPoints}" />
+                            
                         </Grid>
                     </StackPanel>
                 </StackPanel>
@@ -155,12 +166,11 @@
         </ScrollViewer>
 
         <Grid Grid.Row="2" Margin="0, 30, 0, 30">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Viewbox  Grid.Column="0" MaxWidth="300" MaxHeight="80">
-                <Button Content="Отправить ответы" Command="{Binding SendResponses}" Style="{StaticResource ButtonStyle}" Click="Button_ToResultPage"/>
+            <Viewbox MaxWidth="300" MaxHeight="80">
+                <Button Content="Отправить ответы" 
+                        Command="{Binding SendResponses}" 
+                        Style="{StaticResource ButtonStyle}" 
+                        Click="Button_ToResultPage"/>
             </Viewbox>
         </Grid>
     </Grid>

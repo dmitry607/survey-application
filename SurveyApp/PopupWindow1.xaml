@@ -7,50 +7,48 @@
         xmlns:io="clr-namespace:System.IO;assembly=mscorlib"
         xmlns:local="clr-namespace:SurveyApp"
         mc:Ignorable="d"
-        Title="PopupWindow1" 
-        Background="#ededed"
-        Width="800" Height="900"
-        WindowStartupLocation="CenterScreen">
+        Width="Auto" Height="Auto" MaxWidth ="750" MaxHeight="850"
+        SizeToContent="WidthAndHeight" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" 
+        WindowStyle="None">
+
     <Window.Resources>
         <ObjectDataProvider x:Key="TextFileProvider" 
-                          ObjectType="{x:Type io:File}"
-                          MethodName="ReadAllText">
+                            ObjectType="{x:Type io:File}"
+                            MethodName="ReadAllText">
             <ObjectDataProvider.MethodParameters>
                 <sys:String>C:\dotnet\SurveyApp\SurveyApp\texts\Policy.txt</sys:String>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
     </Window.Resources>
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
-        </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0"
-                    TextWrapping="Wrap"
-                    TextAlignment="Center"
-                    Text="Политика в отношении обработки персональных данных АНО ДПО «Корпоративный университет Сбербанка»"
-                    FontFamily="Segoe UI" FontSize="20" Foreground="Black" FontWeight="Bold"
-                    />
+    <Window.Template>
+        <ControlTemplate TargetType="Window">
+            <Border Style="{StaticResource PopupBorderBlockStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-        <ScrollViewer Grid.Row="1" 
-              Margin="0,9,0,0"
-              VerticalScrollBarVisibility="Auto">
-            <TextBlock Text="{Binding Source={StaticResource TextFileProvider}}" 
-               Foreground="Black" 
-               FontSize="10" 
-               Style="{StaticResource TextStyleForPoints}"/>
-        </ScrollViewer>
+                    <TextBlock Grid.Row="0"
+                               Text="Политика в отношении обработки персональных данных АНО ДПО «Корпоративный университет Сбербанка»"
+                               Style="{StaticResource PopupTitleFontStyle}"
+                               MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
 
-        <Viewbox Grid.Row="2" Stretch="Uniform" Margin="0,0,0,0" Grid.RowSpan="2" >
-            <Button Content="Закрыть" 
-                    Width="120" 
-                    BorderBrush="#1daf43" 
-                    Background="#1daf43"
-                    Foreground="White"
-                    FontFamily="Segoe UI"
-                    Click="Button_Click"/>
-        </Viewbox>
-    </Grid>
+                    <ScrollViewer Grid.Row="1" 
+                                  VerticalScrollBarVisibility="Auto">
+                        <TextBlock Text="{Binding Source={StaticResource TextFileProvider}}" 
+                                   Style="{StaticResource PopupTextBlockStyle}"/>
+                    </ScrollViewer>
+
+                    <Button Grid.Row="2" 
+                            Style="{StaticResource PopupButtonStyle}"
+                            Click="Button_Click"/>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
 </Window>

@@ -88,7 +88,7 @@ namespace SurveyApp
 
             await SendEmailAsync(toEmail, subject, body);
         }
-        private  string RecFilePath(string grade)
+        private string RecFilePath(string grade)
         {
             return grade switch
             {

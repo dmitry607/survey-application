@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SurveyApp"
         mc:Ignorable="d"
         Height="1000"  Width="1080" 
-        Background="{StaticResource forBackground}">
+        Background="{StaticResource PrimaryGradient}">
 
     <Grid Margin="200, 50, 200, 100">
         <Grid.RowDefinitions>
@@ -16,17 +16,14 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0"
                    Margin="40"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    TextAlignment="Center"
-                    FontWeight="Bold"
-                    FontSize="50"
-                    Style="{StaticResource GlobalTextBlock}">
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   TextAlignment="Center"
+                   Style="{StaticResource TextBlockForTitle}">
             SberQ
         </TextBlock>
 
         <TextBlock  Grid.Row="1"
-                    TextWrapping="Wrap" 
                     TextAlignment="Center"
                     FontSize="25"
                     Style="{StaticResource GlobalTextBlock}">

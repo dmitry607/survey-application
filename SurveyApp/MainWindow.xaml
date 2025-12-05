@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SurveyApp"
         mc:Ignorable="d"
-        Title="Опрос" 
+        Title="Оценка SberQ" 
         Height="Auto" Width="Auto" 
         MinHeight="600" MinWidth="1200"
         WindowState="Maximized"
-        Background="{StaticResource forBackground}">
+        Background="{StaticResource PrimaryGradient}">
     <Grid>
         <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden"/>
     </Grid>

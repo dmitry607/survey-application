@@ -7,10 +7,11 @@
         xmlns:io="clr-namespace:System.IO;assembly=mscorlib"
         xmlns:local="clr-namespace:SurveyApp"
         mc:Ignorable="d"
-        Title="согласие на обработку персональных данных" 
-        Background="#ededed"
-        Width="600" Height="600"
-        WindowStartupLocation="CenterScreen">
+        Width="500" Height="Auto" MaxWidth="800" MaxHeight="900"
+        SizeToContent="WidthAndHeight" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" 
+        WindowStyle="None">
     
     <Window.Resources>
         <ObjectDataProvider x:Key="TextFileProvider" 
@@ -21,36 +22,33 @@
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
     </Window.Resources>
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0"
-                    TextWrapping="Wrap"
-                    TextAlignment="Center"
-                    Text="Согласие на обработку персональных данных"
-                    FontFamily="Segoe UI" FontSize="30" Foreground="Black"
-                    FontWeight="Bold"
-                    />
-        <Viewbox Grid.Row="1" Margin="0,0,0,10" >
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="-10" Width="736">
-                <TextBlock  Text="{Binding Source={StaticResource TextFileProvider}}" 
-                            Foreground="Black" FontSize="14"
-                            Style="{StaticResource TextStyleForPoints}">
-
-                </TextBlock>
-            </ScrollViewer>
-        </Viewbox>
-        <Viewbox Grid.Row="2" >
-            <Button Content="Закрыть" 
-                    Width="120" 
-                    BorderBrush="#1daf43" 
-                    Background="#1daf43"
-                    Foreground="White"
-                    FontFamily="Segoe UI"
-                    Click="Button_Click"/>
-        </Viewbox>
-    </Grid>
+    <Window.Template>
+        <ControlTemplate TargetType="Window">
+            <Border CornerRadius="30"
+                    BorderThickness="5"
+                    Background="{StaticResource PopupBackgroundColor}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                       Text="Согласие на обработку персональных данных"
+                       Style="{StaticResource PopupTitleFontStyle}"
+                       MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+                    <ScrollViewer Grid.Row="1"
+                          VerticalScrollBarVisibility="Auto">
+                        <TextBlock  Text="{Binding Source={StaticResource TextFileProvider}}" 
+                                    Margin="20, 10"
+                                    FontSize="10"
+                                    Style="{StaticResource PopupTextBlockStyle}"/>
+                    </ScrollViewer>
+                    <Button Grid.Row="2"
+                            Style="{StaticResource PopupButtonStyle}"
+                            Click="Button_Click"/>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
 </Window>

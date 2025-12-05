@@ -23,7 +23,10 @@ namespace SurveyApp
         {
             InitializeComponent();
         }
-
+        public void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
