@@ -1,12 +1,11 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Net.Mail;
 using System.Net;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
 
-namespace SurveyApp
+namespace SurveyApp.Services
 {
     internal class EmailService
     {
@@ -90,11 +89,13 @@ namespace SurveyApp
         }
         private string RecFilePath(string grade)
         {
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+
             return grade switch
             {
-                "0-2" => "C:\\dotnet\\SurveyApp\\SurveyApp\\texts\\rec0_2.txt",
-                "3-6" => "C:\\dotnet\\SurveyApp\\SurveyApp\\texts\\rec3_6.txt",
-                "7-10" => @"C:\dotnet\SurveyApp\SurveyApp\texts\rec7_10.txt"
+                "0-2" => System.IO.Path.Combine(basePath, "texts", "rec0_2.txt"),
+                "3-6" => System.IO.Path.Combine(basePath, "texts", "rec3_6.txt"),
+                "7-10" => System.IO.Path.Combine(basePath, "texts", "rec7_10.txt")
             };
         }
     }

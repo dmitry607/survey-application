@@ -54,7 +54,7 @@ namespace SurveyApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SurveyApp;V1.0.0.0;component/popupwindow2.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SurveyApp;component/popupwindow2.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PopupWindow2.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

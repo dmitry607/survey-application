@@ -1,4 +1,7 @@
-﻿using System.Net.NetworkInformation;
+﻿using SurveyApp.Views;
+using SurveyApp.ViewModels;
+using SurveyApp.Services;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -33,13 +36,15 @@ namespace SurveyApp
             try
             {
                 string email = EmailTextBox.Text.Trim();
+                if (string.IsNullOrEmpty(email))
+                {
+                    MessageBox.Show("Заполните поле email", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
                 if (checkBox.IsChecked != true)
                 {
-                    if (string.IsNullOrEmpty(email))
-                    {
-                        MessageBox.Show("Заполните поле email", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        return;
-                    }
+                    MessageBox.Show("Необходимо согласиться с политикой конфиденциальности!","Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
                 }
                 if (!ValidEmail(email))
                 {
@@ -58,19 +63,16 @@ namespace SurveyApp
                     var viewModel = (ResultViewModel)DataContext;
                     await emailService.SendSurveyAsync(email, viewModel.Grade);
 
+                    if (Application.Current.MainWindow is MainWindow mainWindow)
+                    { mainWindow.NavigateToPage(new LastPage()); }
+
                 }
                 catch(Exception ex)
                 {
                     MessageBox.Show($"Ошибка при отправке email: {ex.Message}");
                 }
 
-                if (Application.Current.MainWindow is MainWindow mainWindow)
-                { mainWindow.NavigateToPage(new LastPage()); }
-
-                else
-                {
-                    MessageBox.Show("Подтвердите выбор!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
+                
             }
             catch (Exception ex)
             {

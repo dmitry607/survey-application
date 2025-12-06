@@ -1,10 +1,11 @@
-﻿using System.ComponentModel;
+﻿using SurveyApp.Services;
+using System.ComponentModel;
 using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Windows;
-using System.Windows.Input;
+using System.IO;
 
-namespace SurveyApp
+namespace SurveyApp.ViewModels
 {
     class ResultViewModel : INotifyPropertyChanged
     {
@@ -78,11 +79,13 @@ namespace SurveyApp
         }
         private string RecFilePath(string grade)
         {
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+
             return grade switch
             {
-                "0-2" => "C:\\dotnet\\SurveyApp\\SurveyApp\\texts\\rec0_2.txt",
-                "3-6" => "C:\\dotnet\\SurveyApp\\SurveyApp\\texts\\rec3_6.txt",
-                "7-10" => @"C:\dotnet\SurveyApp\SurveyApp\texts\rec7_10.txt"
+                "0-2" => System.IO.Path.Combine(basePath, "texts", "rec0_2.txt"),
+                "3-6" => System.IO.Path.Combine(basePath, "texts", "rec3_6.txt"),
+                "7-10" => System.IO.Path.Combine(basePath, "texts", "rec7_10.txt")
             };
         }
         private string GradeScore(int score)

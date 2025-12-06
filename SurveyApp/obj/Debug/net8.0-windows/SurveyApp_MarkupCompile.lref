@@ -1,11 +1,11 @@
 ﻿
 FC:\dotnet\SurveyApp\SurveyApp\App.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\LastPage.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\MainPage.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\MainWindow.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\PopupWindow1.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\PopupWindow2.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\ResultPage.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\ThxPage.xaml;;
-FC:\dotnet\SurveyApp\SurveyApp\WelcomePage.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\LastPage.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\MainPage.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\MainWindow.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\PopupWindow1.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\PopupWindow2.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\ResultPage.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\ThxPage.xaml;;
+FC:\dotnet\SurveyApp\SurveyApp\Views\WelcomePage.xaml;;
 

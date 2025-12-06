@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
 
-namespace SurveyApp
+namespace SurveyApp.ViewModels
 {
     class MainViewModel : INotifyPropertyChanged
     {

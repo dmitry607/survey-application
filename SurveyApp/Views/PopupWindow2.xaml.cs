@@ -12,11 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SurveyApp
+namespace SurveyApp.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для PopupWindow2.xaml
-    /// </summary>
     public partial class PopupWindow2 : Window
     {
         public PopupWindow2()

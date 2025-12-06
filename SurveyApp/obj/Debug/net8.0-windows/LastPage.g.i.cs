@@ -53,7 +53,7 @@ namespace SurveyApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SurveyApp;V1.0.0.0;component/lastpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SurveyApp;component/lastpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LastPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
