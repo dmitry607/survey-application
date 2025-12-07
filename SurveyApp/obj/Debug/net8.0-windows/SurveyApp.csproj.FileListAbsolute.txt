@@ -36,3 +36,5 @@ C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\Views\WelcomePage.baml
 C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
 C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\Views\MainWindow.baml
+C:\dotnet\SurveyApp\SurveyApp\bin\Debug\net8.0-windows\settings.json
+C:\dotnet\SurveyApp\SurveyApp\obj\Debug\net8.0-windows\SurveyApp_Content.g.cs

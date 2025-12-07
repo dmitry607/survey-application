@@ -3,6 +3,7 @@ using System.Net.Mail;
 using System.Net;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Windows;
 
 
 namespace SurveyApp.Services
@@ -13,27 +14,25 @@ namespace SurveyApp.Services
         private bool isInitialized = false;
         public async Task LoadEmailSettingsAsync()
         {
-            
-            try {
-                string filePath = @"C:\dotnet\SurveyApp\settings.json";
-                if (!File.Exists(filePath))
-                {
-                    throw new FileNotFoundException("файл настроек не найден", filePath);
-                }
-                using (FileStream fs = new FileStream(filePath, FileMode.Open))
-                {
-                    emailSettings = await JsonSerializer.DeserializeAsync<EmailSettings>(fs);
-                }
-                if (emailSettings == null)
-                {
-                    throw new InvalidOperationException("не удалось загрузить настройки email");
-                }
-                isInitialized = true;
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            string filePath = Path.Combine(basePath, "settings.json");
+
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("Файл настроек не найден", filePath);
             }
-            catch (Exception ex) { 
-                Console.WriteLine($"Ошибка загрузки настроек: {ex.Message}");
-                throw;
+
+            using (FileStream fs = new FileStream(filePath, FileMode.Open))
+            {
+                emailSettings = await JsonSerializer.DeserializeAsync<EmailSettings>(fs);
             }
+
+            if (emailSettings == null)
+            {
+                throw new InvalidOperationException("не удалось загрузить настройки email");
+            }
+
+            isInitialized = true;
         }
 
         public async Task SendEmailAsync(string toEmail, string subject, string body)

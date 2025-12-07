@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "C:\\dotnet\\SurveyApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\viewmodels\\popupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\viewmodels\\popupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\popupwindow1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\popupwindow1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\popupwindow2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\popupwindow2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\views\\lastpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\views\\lastpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\resultpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\resultpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\lastpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\lastpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\thxpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\thxpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|c:\\dotnet\\surveyapp\\surveyapp\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C425E23C-8242-47E6-B0EA-1030F2B8311F}|SurveyApp\\SurveyApp.csproj|solutionrelative:surveyapp\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,114 +42,109 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "SurveyApp\\MainPage.xaml.cs",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\MainPage.xaml.cs",
-              "RelativeToolTip": "SurveyApp\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T21:00:45.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\Styles.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\Styles.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\Styles.xaml*",
-              "RelativeToolTip": "SurveyApp\\Styles.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-23T18:02:45.968Z",
+              "DocumentIndex": 2,
+              "Title": "settings.json",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\settings.json",
+              "RelativeDocumentMoniker": "SurveyApp\\settings.json",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\settings.json",
+              "RelativeToolTip": "SurveyApp\\settings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T13:56:17.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\MainPage.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\MainPage.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\MainPage.xaml*",
-              "RelativeToolTip": "SurveyApp\\MainPage.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-25T12:00:44.195Z",
+              "Title": "PopupViewModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\ViewModels\\PopupViewModel.cs",
+              "RelativeDocumentMoniker": "SurveyApp\\ViewModels\\PopupViewModel.cs",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\ViewModels\\PopupViewModel.cs",
+              "RelativeToolTip": "SurveyApp\\ViewModels\\PopupViewModel.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwCYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T13:18:04.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WelcomePage.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\WelcomePage.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\WelcomePage.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\WelcomePage.xaml",
-              "RelativeToolTip": "SurveyApp\\WelcomePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T14:55:36.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PopupWindow2.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\PopupWindow2.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\PopupWindow2.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\PopupWindow2.xaml",
-              "RelativeToolTip": "SurveyApp\\PopupWindow2.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-02T17:02:30.955Z",
+              "DocumentIndex": 0,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "SurveyApp\\Services\\EmailService.cs",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\Services\\EmailService.cs",
+              "RelativeToolTip": "SurveyApp\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T13:17:13.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PopupWindow1.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\PopupWindow1.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\PopupWindow1.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\PopupWindow1.xaml",
-              "RelativeToolTip": "SurveyApp\\PopupWindow1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-02T17:09:56.711Z",
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "SurveyApp\\Models\\EmailSettings.cs",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\Models\\EmailSettings.cs",
+              "RelativeToolTip": "SurveyApp\\Models\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T13:17:03.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LastPage.xaml.cs",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\Views\\LastPage.xaml.cs",
+              "RelativeDocumentMoniker": "SurveyApp\\Views\\LastPage.xaml.cs",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\Views\\LastPage.xaml.cs",
+              "RelativeToolTip": "SurveyApp\\Views\\LastPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T13:10:52.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SurveyApp\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SurveyApp\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T13:10:34.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ResultPage.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\ResultPage.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\ResultPage.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\ResultPage.xaml",
-              "RelativeToolTip": "SurveyApp\\ResultPage.xaml",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "SurveyApp\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "SurveyApp\\Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-23T15:13:05.927Z",
+              "WhenOpened": "2025-12-06T13:10:18.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ThxPage.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\ThxPage.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\ThxPage.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\ThxPage.xaml",
-              "RelativeToolTip": "SurveyApp\\ThxPage.xaml",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\App.xaml",
+              "RelativeDocumentMoniker": "SurveyApp\\App.xaml",
+              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\App.xaml",
+              "RelativeToolTip": "SurveyApp\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-23T17:39:06.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LastPage.xaml",
-              "DocumentMoniker": "C:\\dotnet\\SurveyApp\\SurveyApp\\LastPage.xaml",
-              "RelativeDocumentMoniker": "SurveyApp\\LastPage.xaml",
-              "ToolTip": "C:\\dotnet\\SurveyApp\\SurveyApp\\LastPage.xaml",
-              "RelativeToolTip": "SurveyApp\\LastPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-23T17:38:10.88Z"
+              "WhenOpened": "2025-12-05T11:51:30.752Z",
+              "EditorCaption": ""
             }
           ]
         }
